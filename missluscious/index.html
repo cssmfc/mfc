@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webdesigner</title>
+<style>
+body{background-color:#f1f1f1;background-image:url('https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/main_bg_ram.png');background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;background-position:center;background-attachment:fixed;}
+* {box-sizing:border-box;}
+html {}
+h1 {font-size:34px;font-family:'Arial',sans-serif;}
+h2 {font-size:27px;font-family:'Arial',sans-serif;}
+h3 {font-size:24px;font-family:'Arial',sans-serif;}
+h4 {font-size:22px;font-family:'Arial',sans-serif;}
+h5 {font-size:20px;font-family:'Arial',sans-serif;}
+h6 {font-size:20px;font-family:'Arial',sans-serif;}
+a {color:#d90552;text-decoration:none;}
+a:visited {color:#d90552;text-decoration:none;}
+a:hover {color:#000;text-decoration:none;}
+a:active {color:#000; text-decoration:none;}
+a:focus {color:#d90552;text-decoration:none;}
+* {box-sizing: border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;}
+[class*="no"] {float: left;padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {content: "";clear: both; display: block;
+}.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}.right {text-align:right;}.center {text-align:center;}.fleft {float:left;}.fright {float:right;}.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}.dotted {border-bottom:1px dashed #777;border-left:0;border-right:0;margin-bottom:10px;}
+.xcr::-webkit-scrollbar {width:5px;}
+.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}
+.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#333;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}
+.nav{display:block;position:fixed;top:0;left:0;background-color:#111111;z-index:9999;width:100%;height:auto;}.navigation{}.navigation a:link,.navigation a:visited{display:inline-block;color:#fff;text-decoration:none;font-size:15px;padding:14px 8px;text-align:center;margin:-3px -3px auto auto;font-family:Verdana, Geneva, sans-serif;font-weight:300;transition:all .3s;-webkit-transition:all .3s;}.navigation a:hover{color:#fff;background-color:#F90;}.navigation a:first-child{border-bottom:3px solid #F90;}
+.wrapper{background-color:#fff;box-shadow:0 3px 6px #999;margin:12px auto;}
+.avatar {text-align:center;}.avatar img{display:block;width:100%;height:auto;margin:0 auto;}
+.box{max-height:280px;overflow:auto;font-size:17px;color:#666;font-family:Arial, Helvetica, sans-serif;box-sizing: border-box;}
+.banner{}.banner img{width:80%;height:auto;opacity:0.5;transition:all .3s;-webkit-transition:all .3s;}.banner:hover img{width:80%;height:auto;opacity:1;}
+.social{text-align:center;}.social img{display:block;width:25px;height:25px;}.social a{display:inline-block;padding:4px 6px;text-align:center;transition:all .3s;-webkit-transition:all .3s;border:1px solid #ccc;}.social a:hover:nth-child(1){background-color:#0099FF;border:1px solid #0099FF;}.social a:hover:nth-child(2){background-color:#666699;border:1px solid #666699;}.social a:hover:nth-child(3){background-color:#CC3333;border:1px solid #CC3333;}.social a:hover:nth-child(4){background-color:#660066;border:1px solid #660066;}
+.dasheaders div:nth-child(1){border-radius:4px 0 0 0;}.dasheaders div:nth-child(3){border-radius:0 4px 0 0}
+.markup{background:#f1f1f1;border-bottom:1px solid #ccc;border-left:1px solid #ccc;}mark,code,textarea{display:inline-block;width:120px;height:20px;color:#099;font-family:"Lucida Console", Monaco, monospace;font-size:18px;}
+.info{font-size:16px;color:#333;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;font-family:Arial, Helvetica, sans-serif;}
+.hed{font-size:18px;color:#333;border-bottom:1px solid #ccc;font-family:Arial, Helvetica, sans-serif;font-weight:bold;background: rgb(249,252,247);
+background: -moz-linear-gradient(top,  rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+background: linear-gradient(to bottom,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=0 );border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;text-shadow:0 -1px 2px #fff;}.na{color:#999;}.html5:before{content:'';margin-right:20px;display:inline-block;width:18px;height:15px;background-image:url('https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/icons/html5_badge.png');background-repeat:no-repeat;background-size:18px 15px;background-position:0 0;}
+.footer{background-color:#222222;margin-bottom:20px;border-top:3px solid #F90;color:#999;font-size:16px;box-shadow:0 2px 4px #999;-webkit-box-shadow:0 2px 4px #999;font-family:"Arial", sans-serif;font-weight:300;}.footer h3{color:#F90;line-height:normal;font-weight:bold;text-shadow:0 -1px 2px #111;}/***CUSTOM  PROFILE GENERATED WITH CAMGIRL LIVE TEMPLATE EDITOR ***/.footer h3:after{content:'';display:block;width:90%;height:1px;background-color:#111;margin:10px auto 7px 0;}.footer p{display:block;line-height:normal;margin:0 auto;font-weight:300;}.footer a:link,.footer a:visited{color:#F90;text-decoration:none;font-weight:300;}.footer a:hover{color:#f1f1f1;text-decoration:none;}.footer-devider{display:block;width:100%;height:1px;overflow:hidden;background-color:#111;box-shadow:0 1px 3px #333;margin:10px auto 30px auto;}.last-arrow{margin-top:-60px;}.up-arrow a:link, .up-arrow a:visited{margin:5px auto -10px auto;display:block;width:60px;height:58px;text-align:center;border-radius:50%;border:2px solid #F90;color:#F90;background-color:#222;background-image:url('https://camgirlbioeditor.files.wordpress.com/2017/01/up-chevron.png');background-repeat:no-repeat;background-size:50px 50px;background-position:2px 1px;transition:all .3s;-moz-transition:all .3s;-webkit-transition:all .3s;padding-top:10px;padding-bottom:10px;}.up-arrow a:hover{margin:5px auto -10px auto;background-color:#F90;padding-top:8px;padding-bottom:10px;box-shadow:0 3px 5px #000;background-image:url('https://camgirlbioeditor.files.wordpress.com/2017/01/up-chevron.png');background-repeat:no-repeat;background-size:50px 50px;background-position:2px -3px;}.copyright{font-size:13px;font-weight:300;color:#777;}code{}
+@media only screen and (max-width: 500px) {
+    body {width:90%;margin:0 auto;}
+	[class*="col-"] {float: left;padding: 15px;margin:0 auto;width:100%;}
+	img{width:100%;}
+	.navigation{display:block;width:100%;margin:0 auto;position:relative;text-align:center;}
+	.navigation img{display:block;text-align:center;width:70px;height:21px;margin:0 auto;}
+	.navigation a:link,.navigation a:visited,.navigation a:hover{display:block;text-align:center;}
+}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+<title>Dan N - web designer at Camgirl Live Template Editor</title>
+
+<div class="nav">
+<div class="col-12 no navigation">
+<a href="//camgirl.xniteproductions.com/cb-profiler/" target="_blank"><img src="//camgirl.xniteproductions.com/cb-profiler/wp-content/uploads/2016/10/cg_icon.png"/></a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/blog/" target="_blank">Blog</a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/community/" target="_blank">Forum</a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/plans/" target="_blank">Plans</a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/editor/" target="_blank">Editor</a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/faq/" target="_blank">FAQ</a>
+<a href="//camgirl.xniteproductions.com/cb-profiler/contact/" target="_blank">Contact</a>
+</div>
+</div>
+
+
+<div id="top" class="row">
+  <div class="col-12 wrapper">
+     <div class="col-3"><div class="col-12 avatar"><img src="https://mfcpro.files.wordpress.com/2016/10/dan_static.jpg" alt="avatar"/></div></div>
+     <div class="col-7 about">
+       <h1>About Me</h1>
+       <div class="col-12 box xcr">
+         <p>Web designer with some years of experience in adult niche</p>
+         <p>I started designing and coding MyFreeCams profile templates for fun in 2007, when for the first time a model asked to make some modifications to her MyFreeCams profile page<br/>
+After 3 or 4 projects this creative hobby had become a job and I get more involved<br/>In 2008 I quit my daily classic job and started working from home.<br/>
+Who doesn't enjoy collaborating with beautiful models?! so I've decided to get in this line of business working as a freelance web-designer and developer for adult industry on creative niche</p>
+       </div>
+     </div>
+     
+     <div class="col-2">
+     <div class="col-12 no social">
+     <a href="https://www.twitter.com/CSSMFC" target="_blank"><img id="twitter" src="https://camgirlbioeditor.files.wordpress.com/2016/12/twt.png" alt="follow on twitter" width="25" height="25"/></a>
+     <a href="https://www.facebook.com/no1adultwebdesign/" target="_blank"><img id="facebook" src="https://camgirlbioeditor.files.wordpress.com/2016/12/fb.png" alt="join us on Facebook" width="25" height="25"/></a>
+     <a href="https://plus.google.com/u/0/communities/116131155335403761882" target="_blank"><img id="google_plus" src="https://camgirlbioeditor.files.wordpress.com/2016/12/gplus.png" alt="join us on Google Plus" width="25" height="25"/></a>
+     <a href="https://www.linkedin.com/pulse/camgirl-bio-live-editor-nita-dan" target="_blank"><img id="linkedin" src="https://camgirlbioeditor.files.wordpress.com/2016/12/in.png" alt="linkedIn" width="25" height="25"/></a>
+     </div>
+     <div class="col-12 center banner">
+     <img src="http://shop.design-xpro.com/wp-content/uploads/2016/08/emblem_square-hires-150.jpg"/>
+    </div>
+     
+  </div>
+</div>
+
+
+
+
+<div class="col-12 footer">
+
+ <div class="col-12 center last-arrow">
+ <div class="up-arrow"><a href="#top"></a></div>
+ </div>
+ 
+<div class="footer-devider"></div>
+
+<div class="col-12 center">
+<div class="col-12 copyright"> 2017 &copy; Camgirl Live Template Editor</div>
+</div>
+</div>
+
+</body>
+</html>
