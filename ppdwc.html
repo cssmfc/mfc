@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+body{margin:0 auto;width:90%;background-color:#f1f1f1;}
+.container{width:80%;height:auto;padding:3rem;margin:3rem auto 4rem auto;border:1px solid #ccc;background-color:#fff;color:#777;font-size:14px;font-family:sans-serif;}
+
+.overlay {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:9999;
+  background-color:black;
+  color:white;
+  padding:10% 0;
+  text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="protect-body" class="container">
+<p>Some Content here</p>
+</div>
+
+
+
+
+<div id="protect-overlay" class="overlay">
+    <form action="#">
+        <input name="answer" type="password" placeholder="Password?"/> <button type="submit">Open</button>
+    </form>
+</div>
+
+
+<script>
+(function() {
+    var o = document.getElementById('protect-overlay');
+    o.getElementsByTagName('form')[0].onsubmit = function() {
+        // https://developer.mozilla.org/En/DOM/Window.btoa
+        // https://developer.mozilla.org/en/DOM/window.atob
+        // to get the obfuscated text, use `console.log(btoa('your text goes here'))`
+        // `aSBsb3ZlIHlvdQ==` => `i love you`
+        if (this.answer.value === atob('aSBsb3ZlIHlvdQ==')) {
+            o.style.display = "none";
+        } else {
+            alert('Wrong password!');
+        }
+        return false;
+    };
+})();
+</script>
+
+
+<script type="text/javascript">
+var cookie = document.cookie;
+if (cookie.indexOf('visited=', 0) == -1) {
+    var expiration = new Date();
+    expiration.setDate(expiration.getDate()+1);
+    document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+
+    var element = document.getElementById('protect-overlay');
+    element.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
